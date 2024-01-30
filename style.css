@@ -175,3 +175,29 @@
     left: 5px;
   
   }
+
+  @media screen and (min-width: 600px) {
+    .card {
+      flex: 0 1 200px;
+      max-width: 200px;
+      margin-bottom: 1em;
+    }
+  }
+
+  @media screen and (max-width: 599px) {
+    .card {
+      flex: 0 1 calc(45% - 0.1em);
+      margin-bottom: 1em;
+    }
+    .masthead {
+      height: 125px;
+      padding-top: 10px;
+      font-size: large;
+    }
+  }
+
+  @media screen and (min-width: 800px) {
+    .cards {
+      margin-top: inherit;
+    }
+  }
